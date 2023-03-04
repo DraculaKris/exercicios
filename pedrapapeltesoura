@@ -1,0 +1,31 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+using namespace std;
+int main ()
+{
+int jogador, computador;
+// semente para gerar números aleatórios
+srand (time (NULL));
+do{
+// gerar escolha do computador (1 a 3)
+computador = rand() % 3 + 1;
+cout << "Escolha sua jogada:" << endl;
+cout << "1 - Pedra" << endl;
+cout << "2 - Papel" << endl;
+cout << "3 - Tesoura"<< endl;
+cin >> jogador;
+}
+if (jogador==computador) {
+cout << "Empate!" << endl;
+}
+else if (jogador == 1 && computador == 3 11
+jogador == 2 && computador == 1 || jogador ==
+3 && computador == 2) {
+cout << "O jogador venceu!" << endl;
+}
+else{
+cout << "O computador venceu!" <<
+endl;
+} while (true);
+}
