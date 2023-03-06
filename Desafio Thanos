@@ -1,0 +1,28 @@
+import random
+
+while True:
+    esconda = random.randrange (0, 50)
+
+    dificuldade = int(input("3-Fácil\n2-Médio\n1-Díficil\n insire a dificuldade:"))
+
+    tentativas = dificuldade * 5
+
+    while tentativas > 0: 
+        
+        print("Você possui " + str(tentativas) + " tentativas")
+        numero = int(input("Informe uma arvore: "))
+        
+        if numero == esconda:
+            print("Você ganhou!")
+            break
+        elif numero > esconda:
+            print("Numero é menor")
+        else: 
+            print("O numero é maior")
+            
+        tentativas = tentativas - 1
+    
+    sair = input("Jogar novamente? S ou N: ")
+    
+    if sair == "N":
+        break
